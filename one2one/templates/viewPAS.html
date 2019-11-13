@@ -1,0 +1,21 @@
+<table align="center" method="post">
+    <tr>
+        <th>passport</th>
+           <th>person no</th>
+    </tr>
+{% for x in data %}
+    <tr>
+        <th>{{ x.pno }}</th>
+        <th>{{ x.p_details }}</th>
+    </tr>
+    <table align="center" border="2">
+    <tr>
+    <th>{{ x.p_details.aadhar }}</th>
+        <th>{{ x.p_details.contact }}</th>
+    <th>{{ x.p_details.address }}</th>
+
+    </tr>
+    </table>
+    {% endfor %}
+</table>
+
